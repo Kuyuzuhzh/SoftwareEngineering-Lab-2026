@@ -1,0 +1,44 @@
+@startuml "UML时序图 - 公司多人共享记账系统"
+
+actor Client
+participant "User" as U
+participant "AccountBook" as B
+participant "Account" as A
+
+Client -> U: Log in
+Client -> B: Open account book
+B -> U: Request user ID
+U --> B: user_id
+
+alt IsBelong(user_id: int) == True
+    B --> Client: Successfully opened
+else IsBelong(user_id: int) == False
+    B --> Client: No access permission
+end
+
+Client -> B: addUser(user: User*) (创建者权限操作举例)
+alt IsCreator(user_id: int) == True
+    B -> U: query new_user_id
+    U --> B: new_user_id
+else IsCreator(user_id: int) == False
+    B --> Client: Insufficient permissions
+end
+
+Client -> B: addAccount(account: Account*)
+B -> A: update account information
+Client -> B: editAccount(account: Account*)
+B -> A: update account information
+Client -> B: submitAccount(account: Account*)
+B -> A: update account information
+
+Client -> B: passAccount(account: Account*) (审核员权限操作举例)
+alt IsAuditor(user_id: int) == True
+    B -> A: update account information
+else IsAuditor(user_id: int) == False
+    B --> Client: Insufficient permissions
+end
+
+Client -> B: Close account book
+Client -> U: Log out
+
+@enduml

@@ -1,0 +1,77 @@
+@startuml "UML类图 - 公司多人共享记账系统"
+
+' 账本
+class AccountBookList as "帐本列表\nAccountBookList" {
+    -BookList: List<AccountBook>
+    -book_sum: int
+    +addAccountBook(creator: User)
+}
+class AccountBook as "账本\nAccountBook" {
+    -book_id: int
+    -Creator: User
+    -Auditor: List<User*>
+    -Normal: List<User*>
+    -editing_list: List<Account>
+    -waiting_list: List<Account>
+    -passed_list: List<Account>
+    -rejected_list: List<Account>
+    -cancelled_list: List<Account>
+    -withdrawn_list: List<Account>
+    +handle_User(user: User*)
+    +handle_Account(account: Account*)
+}
+class User as "用户\nUser" {
+    -user_id: int
+    -submission: List<Account*>
+}
+class Account as "帐本条目\nAccount" {
+    -belong_book: int
+    -submitter: int
+    -state: int
+    -type: int 
+    -amount: int
+    -time: DateTime
+    -payer: string
+    -note: string
+    -attach_file: ArrayList<string>
+}
+
+' 用户处理模块
+class HandleUser as "用户管理\nHandleUser" {
+    +addUser(user: User*)
+    +addAuditor(audito: User*)
+}
+
+' 条目处理模块
+class HandleAccount as "条目处理\nHandleAccount" {
+    +addAccount(account: Account*)
+    +editAccount(account: Account*)
+    +submitAccount(account: Account*)
+    +passAccount(account: Account*)
+    +rejectAccount(account: Account*)
+    +cancelAccount(account: Account*)
+    +withdrawAccount(account: Account*)
+}
+
+' 条目查询模块
+class QueryAccount as "条目查询\nQueryAccount" {
+    +sortAccount(accounts: List<Account>)
+    +selectAccount(accounts: List<Account>)
+}
+
+' 教程与帮助
+class HelpDocument as "帮助文档\nHelpDocument" {
+}
+class Tutorial as "使用教程\nTutorial" {
+}
+
+' 关系
+AccountBookList "1" -- "1..*" AccountBook : has >
+AccountBook "1" -- "1..*" User : has>
+AccountBook "1" -- "1..*" Account : has>
+User "1" -- "0..*" Account : submit>
+HandleUser "1" -- "1" AccountBook : performs >
+HandleAccount "1" -- "1" AccountBook: performs >
+QueryAccount "1" -- "1" AccountBook: performs >
+
+@enduml

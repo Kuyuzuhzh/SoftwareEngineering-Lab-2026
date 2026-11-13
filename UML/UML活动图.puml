@@ -1,0 +1,46 @@
+@startuml "UML活动图 - 公司多人共享记账系统"
+start
+
+:开始使用公司多人共享记账系统;
+if (是否创建新的账本？) then (是)
+    :创建账本;
+else (否)
+    :选择要进入的账本;
+endif
+
+:进入账本;
+
+switch (拥有并使用的权限类型)
+case (管理员权限)
+    switch (操作类型)
+    case (邀请成员)
+        :邀请成员;
+    case (设置审核员)
+        :设置审核员;
+    endswitch
+case (审核员权限)
+    switch (操作类型)
+    case (审核条目)
+        :审核记录;
+    case (驳回条目)
+        :驳回条目;
+    case (作废条目)
+        :作废条目;
+    endswitch
+case (普通用户权限)
+    switch (操作类型)
+    case (提交新账本条目)
+        :提交新账本条目;
+    case (修改已提交未审核条目)
+        :修改已提交未审核条目;
+    case (撤销已提交未审核条目)
+        :撤销已提交未审核条目;
+    case (查看已公开条目)
+        :查看已公开条目;
+    endswitch
+endswitch
+
+:退出公司多人共享记账系统;
+
+stop
+@enduml

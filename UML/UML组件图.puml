@@ -1,0 +1,45 @@
+@startuml "UML组件图 - 公司多人共享记账系统"
+
+component "公司多人共享记账系统" {
+    node "数据存储模块" as DataStore {
+        artifact user_information
+        artifact account_book_information
+        artifact account_information
+    }
+    node "用户管理模块" as HandleUser {
+        component "addUser"
+        component "addAuditor"
+    }
+    node "条目处理模块" as HandleAccount {
+        component "addAccount"
+        component "editAccount"
+        component "submitAccount"
+        component "passAccount"
+        component "rejectAccount"
+        component "cancelAccount"
+    }
+    node "条目查询模块" as QueryAccount {
+        component "sortAccount"
+        component "selectAccount"
+    }
+    node "用户界面模块" as UserInterface {
+        component UIStyle
+        component UITheme
+    }
+    node "帮助与支持模块" as HelpSupport {
+        artifact HelpDocument
+        artifact Tutorial
+    }
+}
+
+' 定义模块之间的关系
+"用户管理模块" --> "数据存储模块" : 依赖
+"条目处理模块" --> "数据存储模块" : 依赖
+"条目查询模块" --> "数据存储模块" : 依赖
+
+"用户管理模块" --> "用户界面模块" : 调用
+"条目处理模块" --> "用户界面模块" : 调用
+"条目查询模块" --> "用户界面模块" : 调用
+"帮助与支持模块" --> "用户界面模块" : 调用
+
+@enduml

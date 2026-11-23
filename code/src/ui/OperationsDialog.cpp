@@ -362,10 +362,10 @@ void Own(HWND dialog, DialogState& state) {
     else ShowStatus(dialog, result.status);
 }
 
-HWND Label(HWND dialog, const wchar_t* text, int x, int y, int width) {
+HWND Label(HWND dialog, const wchar_t* text, int x, int y, int width, int height = 22) {
     return CreateWindowExW(
         0, L"STATIC", text, WS_CHILD | WS_VISIBLE,
-        x, y, width, 22, dialog, nullptr,
+        x, y, width, height, dialog, nullptr,
         reinterpret_cast<HINSTANCE>(GetWindowLongPtrW(dialog, GWLP_HINSTANCE)), nullptr);
 }
 
@@ -404,11 +404,12 @@ void Controls(HWND dialog) {
         {L"发生日期(YYYY-MM-DD)", current_date.c_str()}, {L"付款人(-表示不筛选)", L""},
         {L"备注", L""}, {L"附件路径(分号分隔)", L""},
         {L"查询状态(-/accepted/waiting)", L"-"}, {L"最低金额(-)", L"-"},
-        {L"最高金额(-)", L"-"}, {L"日期筛选(-/today/yesterday/3days/1month/2months)", L"-"},
+        {L"最高金额(-)", L"-"}, {L"日期筛选(-/today/yesterday/3days/\r\n1month/2months)", L"-"},
         {L"排序字段(time/amount)", L"time"}, {L"排序方向(asc/desc)", L"desc"}};
     for (std::size_t index = 0; index < fields.size(); ++index) {
-        const int y = 12 + static_cast<int>(index) * 28;
-        Label(dialog, fields[index].first, 20, y, 255);
+        const int extra_height = index > 12 ? 24 : 0;
+        const int y = 12 + static_cast<int>(index) * 28 + extra_height;
+        Label(dialog, fields[index].first, 20, y, 255, index == 12 ? 44 : 22);
         Edit(dialog, kActorEdit + static_cast<int>(index), fields[index].second, y - 3);
     }
 
@@ -425,7 +426,7 @@ void Controls(HWND dialog) {
             buttons[index].first,
             buttons[index].second,
             20 + static_cast<int>(index % 4) * 190,
-            438 + static_cast<int>(index / 4) * 34);
+            462 + static_cast<int>(index / 4) * 34);
     }
     CreateWindowExW(
         WS_EX_CLIENTEDGE,
@@ -433,7 +434,7 @@ void Controls(HWND dialog) {
         L"操作结果显示在此处",
         WS_CHILD | WS_VISIBLE | WS_VSCROLL | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY,
         20,
-        548,
+        572,
         740,
         105,
         dialog,
@@ -509,7 +510,7 @@ void ShowOperationsDialog(HWND owner, ILedgerService& service) {
         CW_USEDEFAULT,
         CW_USEDEFAULT,
         800,
-        710,
+        734,
         owner,
         nullptr,
         instance,

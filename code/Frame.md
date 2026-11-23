@@ -1,8 +1,8 @@
 # 公司多人共享记账系统工程骨架
 
-目标平台：Windows 11 
-实现语言：C++17 
-构建工具：CMake + Visual Studio 2022 
+目标平台：Windows 11  
+实现语言：C++17  
+构建工具：CMake + Visual Studio 2022  
 当前阶段：提供可编译的功能切片、控制台与基础 Windows 文件 UI、JSON 文件持久化和自动化测试；其余业务接口保留 stub。
 
 ## 1. 目录树
@@ -401,6 +401,7 @@ std::unique_ptr<ILedgerService> CreateLedgerService(DatabaseSnapshot snapshot);
 要求 Windows 11、Visual Studio 2022 C++ 工作负载和支持 C++17 的 CMake。工程仅支持 Windows，UI 链接系统 `Comdlg32`。
 
 ```powershell
+cd "C:\Users\31399\Documents\ChatGPT\软工实验\code"
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 cmake --build build --config Debug
 ctest --test-dir build -C Debug --output-on-failure

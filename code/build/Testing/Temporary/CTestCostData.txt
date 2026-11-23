@@ -1,0 +1,10 @@
+ledger.empty 15 0.00121325
+ledger.service.membership 15 0.00295612
+ledger.service.review 14 0.00133757
+ledger.service.own_entries 13 0.00145269
+ledger.service.query 11 0.00176565
+ledger.ui.console 9 0.00215024
+ledger.persistence.file 7 0.0057984
+ledger.ui.paths 4 0.00432895
+ledger.service.entry_editing 2 0.012686
+---

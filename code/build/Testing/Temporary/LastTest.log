@@ -1,0 +1,138 @@
+Start testing: Nov 22 22:43 中国标准时间
+----------------------------------------------------------
+1/9 Testing: ledger.empty
+1/9 Test: ledger.empty
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.empty" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.empty" end time: Nov 22 22:43 中国标准时间
+"ledger.empty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/9 Testing: ledger.service.membership
+2/9 Test: ledger.service.membership
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_service_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.service.membership" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.service.membership" end time: Nov 22 22:43 中国标准时间
+"ledger.service.membership" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/9 Testing: ledger.service.review
+3/9 Test: ledger.service.review
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_review_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.service.review" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.service.review" end time: Nov 22 22:43 中国标准时间
+"ledger.service.review" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/9 Testing: ledger.service.own_entries
+4/9 Test: ledger.service.own_entries
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_own_entries_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.service.own_entries" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.service.own_entries" end time: Nov 22 22:43 中国标准时间
+"ledger.service.own_entries" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/9 Testing: ledger.service.query
+5/9 Test: ledger.service.query
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_query_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.service.query" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.service.query" end time: Nov 22 22:43 中国标准时间
+"ledger.service.query" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/9 Testing: ledger.ui.console
+6/9 Test: ledger.ui.console
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_console_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.ui.console" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.ui.console" end time: Nov 22 22:43 中国标准时间
+"ledger.ui.console" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/9 Testing: ledger.persistence.file
+7/9 Test: ledger.persistence.file
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_file_persistence_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code
+"ledger.persistence.file" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.persistence.file" end time: Nov 22 22:43 中国标准时间
+"ledger.persistence.file" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/9 Testing: ledger.ui.paths
+8/9 Test: ledger.ui.paths
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_ui_paths_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.ui.paths" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.ui.paths" end time: Nov 22 22:43 中国标准时间
+"ledger.ui.paths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/9 Testing: ledger.service.entry_editing
+9/9 Test: ledger.service.entry_editing
+Command: "C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build/Debug/ledger_entry_editing_tests.exe"
+Directory: C:/Users/31399/Documents/ChatGPT/杞伐瀹為獙/code/build
+"ledger.service.entry_editing" start time: Nov 22 22:43 中国标准时间
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ledger.service.entry_editing" end time: Nov 22 22:43 中国标准时间
+"ledger.service.entry_editing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 22 22:43 中国标准时间

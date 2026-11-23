@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_console.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_console_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_entry_editing_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_file_persistence_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_own_entries_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_query_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_review_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_service_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_ui.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\Debug\ledger_ui_paths_tests.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\31399\Documents\ChatGPT\软工实验\code\build\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\31399\Documents\ChatGPT\软工实验\code\src\ui\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\31399\Documents\ChatGPT\软工实验\code\src\ui\OperationsDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\31399\Documents\ChatGPT\软工实验\code\src\ui\Win32FileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\31399\Documents\ChatGPT\软工实验\code\src\ui\OperationsDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\31399\Documents\ChatGPT\软工实验\code\src\ui\Win32FileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\31399\Documents\ChatGPT\软工实验\code\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FA33ED05-C23C-3A5C-9CB8-E9FCCCB0E909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A07C7106-E972-33C4-9ABE-FBEBAE11C26E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
